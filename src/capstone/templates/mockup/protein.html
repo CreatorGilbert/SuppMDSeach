@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nutrition Web App Mockup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .bg-1 {
+            background-color: #c1c1c9;
+            color: #bdbdbd;
+        }
+
+        .bg-1 h3 {
+            color: #fff;
+        }
+
+        .bg-1 p {
+            color: #fff;
+        }
+
+        li a {
+            color: #fff;
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #c1c1c9;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        a.icons {
+            float: right;
+        }
+
+        .center {
+            width: 50%;
+        }
+
+        .btn {
+            background-color: rgb(92, 92, 92);
+            border-color: rgb(92, 92, 92);
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: rgb(110, 110, 110);
+            border-color: rgb(110, 110, 110);
+        }
+        button, input, optgroup, select, textarea{
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Protein
+                    <input size="25px" placeholder="What is thy question?" required>
+                    <button type="button" class="btn btn-danger" onclick="location.href = 'search.html'">Search
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#summary">SUPPLIMENTS</a></li>
+                    <li><a href="#information">TOP SEARCHES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div id="summary" class="container text-center">
+            <h3>Summary</h3>
+            <div class="left">
+                <p>A powder, usually flavored, that is consumed for the purpose of adding dietary protein to the diet when food is not consumed. Typically seen as a food product or a meal replacement, protein powders come from a variety of sources such as milk, beef, rice, pea, or hemp.
+                    <br>
+                    <i>confidence: 90%</i>
+                    <a href="https://examine.com" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+                <p>Protein supplements are typically used in conjunction with a proper diet (or as a band-aid to a subpar diet) to increase dietary protein intake.
+
+                    Some specific types of protein are made for certain scenarios, such as casein protein for a slow-release protein and whey protein for a faster release.
+                    <br>
+                    <i>confidence: 75%</i>
+                    <a href="https://examine.com" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="information" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Nutrition Facts</h3>
+            <div class="text-center table">
+                <p class="left">Proteins are large biomolecules, or macromolecules, consisting of one or more long chains of amino acid residues. Proteins perform a vast array of functions within organisms, including catalysing metabolic reactions, DNA replication, responding to stimuli, providing structure to cells and organisms, and transporting molecules from one location to another. Proteins differ from one another primarily in their sequence of amino acids, which is dictated by the nucleotide sequence of their genes, and which usually results in protein folding into a specific three-dimensional structure that determines its activity.
+                    <a href="https://en.wikipedia.org/wiki/Protein" class="icons"><img src="icons/link.jpg" alt="link">
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

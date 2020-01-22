@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nutrition Web App Mockup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .bg-1 {
+            background-color: #c1c1c9;
+            color: #bdbdbd;
+        }
+
+        .bg-1 h3 {
+            color: #fff;
+        }
+
+        .bg-1 p {
+            color: #fff;
+        }
+
+        li a {
+            color: #fff;
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #c1c1c9;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        a.icons {
+            float: right;
+        }
+
+        .center {
+            width: 50%;
+        }
+
+        .btn {
+            background-color: rgb(92, 92, 92);
+            border-color: rgb(92, 92, 92);
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: rgb(110, 110, 110);
+            border-color: rgb(110, 110, 110);
+        }
+        button, input, optgroup, select, textarea{
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Creatine
+                    <input size="25px" placeholder="What is thy question?" required>
+                    <button type="button" class="btn btn-danger" onclick="location.href = 'search.html'">Search
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#summary">SUPPLIMENTS</a></li>
+                    <li><a href="#information">TOP SEARCHES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div id="summary" class="container text-center">
+            <h3>Summary</h3>
+            <div class="left">
+                <p>The primary benefit of creatine is an improvement in strength and power output during resistance
+                    exercise. For this purpose, creatine is well-researched, and the effects are quite notable for a
+                    supplement. When used in conjunction with resistance exercise, creatine may modestly increase lean
+                    mass. It has also been tested for anaerobic running capacity in many studies, the results of which
+                    are
+                    fairly mixed but generally suggest a small improvement in performance.
+                    <br>
+                    <i>confidence: 90%</i>
+                    <a href="https://examine.com/supplements/creatine/" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+                <p>While creatine has been researched far less for cognitive performance than physical performance, it
+                    may have benefits in some contexts. A reduction in mental fatigue has been observed in various
+                    scenarios
+                    such as demanding mental activity, sleep deprivation, and traumatic brain injury. Creatine may
+                    improve working memory, though likely only for those with below-average creatine levels such as
+                    vegetarians
+                    and the elderly. We need more research in these areas and other cognitive measures before creatine
+                    can
+                    be said to be effective.
+                    <br>
+                    <i>confidence: 75%</i>
+                    <a href="https://examine.com" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="information" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Nutrition Facts</h3>
+            <div class="text-center table">
+                <p class="left">Creatine is a nitrogenous organic acid that occurs naturally in vertebrates. Its main
+                    role is to
+                    facilitate recycling of adenosine triphosphate, the energy currency of the cell, primarily in muscle
+                    and brain tissue. This is achieved by recycling adenosine diphosphate to ATP via donation of
+                    phosphate groups. Creatine also acts as a pH buffer in tissues
+                    <a href="https://en.wikipedia.org/wiki/Creatine" class="icons"><img src="icons/link.jpg" alt="link">
+                </p>
+
+                <img class="center" src="icons/creatine.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

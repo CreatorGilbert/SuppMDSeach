@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nutrition Web App Mockup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .bg-1 {
+            background-color: #c1c1c9;
+            color: #bdbdbd;
+        }
+
+        .bg-1 h3 {
+            color: #fff;
+        }
+
+        .bg-1 p {
+            color: #fff;
+        }
+
+        li a {
+            color: #fff;
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #c1c1c9;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        a.icons {
+            float: right;
+        }
+
+        .center {
+            width: 50%;
+        }
+
+        .btn {
+            background-color: rgb(92, 92, 92);
+            border-color: rgb(92, 92, 92);
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: rgb(110, 110, 110);
+            border-color: rgb(110, 110, 110);
+        }
+        button, input, optgroup, select, textarea{
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Creatine
+                    <input size="25px" placeholder="What is thy question?" required>
+                    <button type="button" class="btn btn-danger" onclick="location.href = 'search.html'">Search
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#summary">SUPPLIMENTS</a></li>
+                    <li><a href="#information">TOP SEARCHES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div id="summary" class="container text-center">
+            <h3>Summary</h3>
+            <div class="left">
+                <p>Beta-alanine has been shown to enhance muscular endurance. Many people report being able to perform one or two additional reps in the gym when training in sets of 8–15 repetitions. Beta-alanine supplementation can also improve moderate- to high-intensity cardiovascular exercise performance, like rowing or sprinting.
+                    <br>
+                    <i>confidence: 90%</i>
+                    <a href="https://examine.com" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+                <p>When beta-alanine is ingested, it turns into the molecule carnosine, which acts as an acid buffer in the body. Carnosine is stored in cells and released in response to drops in pH. Increased stores of carnosine can protect against diet-induced drops in pH (which might occur from ketone production in ketosis, for example), as well as offer protection from exercise-induced lactic acid production.
+                    <br>
+                    <i>confidence: 75%</i>
+                    <a href="https://examine.com" class="icons"><img src="icons/link.jpg" alt="link">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="information" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Nutrition Facts</h3>
+            <div class="text-center table">
+                <p class="left">β-Alanine (or beta-alanine) is a naturally occurring beta amino acid, which is an amino acid in which the amino group is at the β-position from the carboxylate group (i.e., two atoms away, see Figure 1). The IUPAC name for β-alanine is 3-aminopropanoic acid. Unlike its counterpart α-alanine, β-alanine has no stereocenter.
+                    <a href="https://en.wikipedia.org/wiki/Creatine" class="icons"><img src="icons/link.jpg" alt="link">
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

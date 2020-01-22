@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+{% load static %}
+{% if successful %}
+        Successful sign up, you will be redirected to the login shortly
+        <meta http-equiv="refresh" content="3;url=/accounts/login/" />
+{% else %}
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="{% static "images/icons/favicon.ico" %}"/>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "fonts/font-awesome-4.7.0/css/font-awesome.min.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "fonts/Linearicons-Free-v1.0.0/icon-font.min.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "vendor/animate/animate.css" %}">
+<!--===============================================================================================-->	
+<link rel="stylesheet" type="text/css" href="{% static "vendor/css-hamburgers/hamburgers.min.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "vendor/animsition/css/animsition.min.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "vendor/select2/select2.min.css" %}">
+<!--===============================================================================================-->	
+<link rel="stylesheet" type="text/css" href="{% static "vendor/daterangepicker/daterangepicker.css" %}">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{% static "css/util.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+<!--===============================================================================================-->
+<style>
+                 .navbar {
+                        font-family: Montserrat, sans-serif;
+                        margin-bottom: 0;
+                        background-color: #e9faff;
+                        border: 0;
+                        font-size: 11px !important;
+                        letter-spacing: 4px;
+                        opacity: 0.9;
+                        color: #fff;
+                }
+
+                .navbar li a,
+                .navbar .navbar-brand {
+                        color: #000000 !important;
+                }
+
+                .navbar-nav li a:hover {
+                        color: rgb(0, 0, 0) !important;
+                }
+
+                .navbar-nav li.active a {
+                        color: #fff !important;
+                        background-color: #29292c !important;
+                }
+
+                .btn {
+                        background-color: rgb(92, 92, 92);
+                        border-color: rgb(92, 92, 92);
+                }
+
+                .btn:hover {
+                        background-color: rgb(110, 110, 110);
+                        border-color: rgb(110, 110, 110);
+                }
+
+                .big {
+                        font-size: 30px;
+                }
+
+                .center {
+                        text-align: center;
+                }
+                a.hover:hover {
+                        color: #444444 !important;
+                }
+</style>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand hover" href="/">SuppMD</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" method="post">
+              {% csrf_token %}
+        <div class="form-group">
+          <input type="text" class="form-control" name="query" placeholder="I want to learn about..." required>
+        </div>
+        <button type="submit" class="btn btn-danger">Search</button>
+      </form>
+        <div class="header">
+        </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->        
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+				<form method='post'>
+					<span class="login100-form-title p-b-33">
+						Create Account
+					</span>{% csrf_token %}
+        				
+					<font color='red'>
+					{% if username_taken %}
+						Username already taken <br>
+                				Please select a different username <br>
+					{% elif username_contains_spaces %}
+						Username cannot contain spaces <br>
+        				{% elif pwd_mismatch %}
+                				Passwords do not match <br>
+        				{% elif pwd_length %}
+                				Password too small <br>
+        				{% endif %}
+					</font>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pwd1" placeholder="Password">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+                                        <div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+                                                <input class="input100" type="password" name="pwd2" placeholder="Password Again">
+                                                <span class="focus-input100-1"></span>
+                                                <span class="focus-input100-2"></span>
+                                        </div>
+
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn">
+							Create Account
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	
+<!--===============================================================================================-->
+	<script src="{% static "vendor/jquery/jquery-3.2.1.min.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "vendor/animsition/js/animsition.min.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "vendor/bootstrap/js/popper.js" %}"></script>
+	<script src="{% static "vendor/bootstrap/js/bootstrap.min.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "vendor/select2/select2.min.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "vendor/daterangepicker/moment.min.js" %}"></script>
+	<script src="{% static "vendor/daterangepicker/daterangepicker.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "vendor/countdowntime/countdowntime.js" %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "js/main.js" %}"></script>
+
+</body>
+</html>
+{% endif %}

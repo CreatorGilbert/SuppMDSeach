@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nutrition Web App Mockup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .container {
+            padding: 80px 120px;
+        }
+
+        .bg-1 {
+            background-color: #c1c1c9;
+            color: #bdbdbd;
+        }
+
+        .bg-1 h3 {
+            color: #fff;
+        }
+
+        .bg-1 p {
+            color: #fff;
+        }
+
+        li a {
+            color: #fff;
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #c1c1c9;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover {
+            color: rgb(0, 0, 0) !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a.icons {
+            float: right;
+        }
+
+        .center {
+            width: 50%;
+        }
+
+        .btn {
+            background-color: rgb(92, 92, 92);
+            border-color: rgb(92, 92, 92);
+        }
+
+        .btn:hover {
+            background-color: rgb(110, 110, 110);
+            border-color: rgb(110, 110, 110);
+        }
+
+        th,
+        td {
+            color: black;
+            text-align: center;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: black;
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Result for: How to get stronger?
+                    <input size="25px" placeholder="What is thy question?" required>
+                    <button type="button" class="btn btn-danger" onclick="location.href = 'search.html'">Search
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#answer">SUPPLIMENTS</a></li>
+                    <li><a href="#information">TOP SEARCHES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="answer" class="container text-center">
+        <h3>Answer</h3>
+        <div class="left">
+            <h3>Creatine</h3>
+            <p>
+                The primary benefit of creatine is an improvement in strength and power output during resistance
+                exercise. For this purpose, creatine is well-researched, and the effects are quite notable for a
+                supplement. When used in conjunction with resistance exercise, creatine may modestly increase lean
+                mass. It has also been tested for anaerobic running capacity in many studies, the results of which
+                are
+                fairly mixed but generally suggest a small improvement in performance.
+                <br>
+                <i>confidence: 90%</i>
+                
+                <a href="https://examine.com/" class="icons"><img src="icons/link.jpg"
+                    alt="link">
+            </a>
+            </p>
+            <br>
+            <h3>Whey Protein</h3>
+            <p>
+                It’s a high quality, well-absorbed source of protein that’s very useful for hitting targeted daily
+                protein goals. Its benefits extend to the benefits of increased protein intake in general, such as
+                augmenting <mark>muscle gain</mark> in conjunction with resistance training, limiting muscle loss during
+                low-calorie
+                diets, and modestly limiting fat gain during periods of excessive calorie intake. These effects aren’t
+                exclusive to whey protein but it will likely be more effective than most other protein sources per gram.
+                <br>
+                <i>confidence: 85%</i>
+                <a href="https://examine.com/supplements/whey-protein/" class="icons"><img src="icons/link.jpg"
+                        alt="link">
+                </a>
+            </p>
+        </div>
+        <br>
+    </div>
+
+    <div id="information" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Helpful Supplements</h3>
+            <div class="text-center table">
+                <table class="table table-striped">
+                    <thead class="thead-dark text-center">
+                        <tr>
+                            <th> Examine.com</th>
+                            <th>RESULTS</th>
+                            <th> Bodybuilding.com</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <td><a href="https://examine.com/supplements/creatine/">Creatine</a></td>
+                            <td>&nbsp;</td>
+                            <td><a
+                                    href="https://www.bodybuilding.com/content/start-here-the-most-important-supplements-for-every-body.html#how-and-why-to-take-protein-powder">Protein</a>
+                            </td>
+                        </tr>
+                        <tr scope="row">
+                            <td><a href="creatine.html">"can help with exercise performance by rapidly producing energy
+                                    during intense activity"
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>"stimulates muscle protein synthesis, the process by which your body repairs and grows
+                                muscle" 95%
+                            </td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr scope="row">
+                            <td><a href="https://examine.com/supplements/whey-protein/">Whey Protein</a></td>
+                            <td>&nbsp; </td>
+                            <td><a href="https://forum.bodybuilding.com/showthread.php?t=177442561">BCAAs</a></td>
+                        </tr>
+                        <tr scope="row">
+                            <td>"well-researched muscle-supporting benefits"</td>
+                            <td>&nbsp;</td>
+                            <td>"BCAA supplementation can also help improve lean mass" 85% </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<h2>Sign Up</h2>
+{% if successful %}
+	Successful sign up, you will be redirected to the login shortly
+	<meta http-equiv="refresh" content="3;url=/accounts/login/" />
+{% else %}
+<form method='post' action='/sign_up/'>
+        {% csrf_token %}
+	{% if user_name_taken %}
+		Username already taken <br>
+		Please select a different username <br>
+	{% elif pwd_mismatch %}
+		Passwords do not match <br>
+	{% elif pwd_length %}
+		Password too small <br>
+	{% endif %}
+	Username: 
+	<input type='text' name='username'><br>
+	Password:
+	<input type='password' name='pwd1'><br>
+	Password again: 
+	<input type='password' name='pwd2'><br>
+	Social security number: 
+	<input type='text' name='ssn'><br>
+        <button type='submit'>Sign Up</button>
+</form>
+{% endif %}
